@@ -73,7 +73,7 @@ with DAG(
         conn.commit()
         cursor.close()
 
-    # DAG Workflow: ETL Pipeline
+    # DAG Workflow: ETL Pipelines
     crypto_data = extract_crypto_data()
     transformed_data = transform_crypto_data(crypto_data)
     load_crypto_data(transformed_data)
